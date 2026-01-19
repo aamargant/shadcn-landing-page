@@ -10,28 +10,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: "Clock",
+    title: "Ahorra 10h/semana",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Olvidate de abrir 20 pestañas cada lunes. Nosotros lo hacemos por ti.",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Historico de Datos",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Cambiaron el precio ayer y volvieron a subirlo hoy? Lo sabras.",
   },
   {
-    icon: "Wallet",
-    title: "Higher Conversions",
+    icon: "Zap",
+    title: "Reaccion Rapida",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Responde a sus ofertas antes de que tus clientes se vayan.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    icon: "Image",
+    title: "Capturas Reales",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "No solo texto. Te enviamos capturas de pantalla del cambio exacto.",
   },
 ];
 
@@ -40,15 +40,13 @@ export const BenefitsSection = () => {
     <section id="benefits" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">BENEFICIOS</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Por que necesitas esto?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Tu competencia no descansa. Tu tampoco deberias... o si, si tienes CompetitorSpy.
           </p>
         </div>
 

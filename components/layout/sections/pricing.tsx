@@ -25,76 +25,45 @@ interface PlanProps {
 
 const plans: PlanProps[] = [
   {
-    title: "Free",
-    popular: 0,
-    price: 0,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
-    benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
-      "Community support",
-      "AI assistance",
-    ],
-  },
-  {
-    title: "Premium",
+    title: "Acceso Beta",
     popular: 1,
-    price: 45,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get starterd",
+    price: 29,
+    description: "Para agencias y e-commerce.",
+    buttonText: "Solicitar Acceso",
     benefitList: [
-      "4 team member",
-      "8 GB storage",
-      "Upto 6 pages",
-      "Priority support",
-      "AI assistance",
-    ],
-  },
-  {
-    title: "Enterprise",
-    popular: 0,
-    price: 120,
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
-    benefitList: [
-      "10 team member",
-      "20 GB storage",
-      "Upto 10 pages",
-      "Phone & email support",
-      "AI assistance",
+      "5 Competidores monitorizados",
+      "Revision diaria automatica",
+      "Alertas de cambio de precio",
+      "Informe semanal con capturas",
+      "Soporte por WhatsApp",
     ],
   },
 ];
 
 export const PricingSection = () => {
   return (
-    <section className="container py-24 sm:py-32">
+    <section id="pricing" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Pricing
+        PRECIOS
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Get unlimitted access
+        Unite a la Beta Privada
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
-        Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
+        Plazas limitadas mientras calibramos nuestros robots.
       </h3>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
+      <div className="flex justify-center">
         {plans.map(
           ({ title, popular, price, description, buttonText, benefitList }) => (
             <Card
               key={title}
               className={
                 popular === PopularPlan?.YES
-                  ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary lg:scale-[1.1]"
-                  : ""
+                  ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary lg:scale-[1.1] w-full max-w-md"
+                  : "drop-shadow-xl shadow-black/10 dark:shadow-white/10 w-full max-w-md"
               }
             >
               <CardHeader>
@@ -106,7 +75,7 @@ export const PricingSection = () => {
 
                 <div>
                   <span className="text-3xl font-bold">${price}</span>
-                  <span className="text-muted-foreground"> /month</span>
+                  <span className="text-muted-foreground"> /mes</span>
                 </div>
               </CardHeader>
 
